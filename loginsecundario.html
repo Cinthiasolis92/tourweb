@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendario</title>
+        <link rel="stylesheet" href="./loginsecundario.css">
+    </head>
+    <body>
+        <div class="barra-superior">
+            <span>📞 +593997325777</span>
+            <div class="logo">🗼 MundoExplora </div>
+            <div class="ingreso">
+                <a>idioma</a>
+                <a>ingreso</a>
+            </div>
+        </div>
+        <div class="registro-contenedor">
+            <div class="contenedor-central">
+                <h1>Regístrate</h1>
+                <p>¿Ya tienes una cuenta? <a href="./loginprincipal.html">Inicia sesión</a></p>
+            </div>
+            <div class="registro-formulario">
+                <form>
+                    
+                    <input type="nombres" placeholder="Nombres completos" required>
+                    <input type="cedula" placeholder="Cedula" required>
+                    <input type="email" placeholder="Escribe tu correo" required>
+                    <input type="password" placeholder="Escribe una contraseña" required>
+                    <input type="convencional" placeholder="Convencional" >
+                    
+                    
+                </form> 
+                <form>
+                    <input type="apellidos" placeholder="Apelidos completos" required>
+                    <input type="date" placeholder="Fecha nacimiento" >
+                    <input type="email" placeholder="Confirma tu correo" required>
+                    <input type="password" placeholder="Repite tu contraseña" >
+                    <input type="telefono" placeholder="Telefono" >
+                </form>
+                <label for="genero">Género:
+                    <select id="genero" name="genero">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                </label>
+                
+            </div>
+            <button type="submit">Registrarme</button>
+            <span class="o">o</span>
+            <div class="registro-social">
+                <button class="google"><img src="https://img.icons8.com/color/24/000000/google-logo.png"/> Continuar con Google</button>
+                <button class="facebook"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png"/> Continuar con Facebook</button>
+            </div>
+        </div>
+    </body>
+</html>

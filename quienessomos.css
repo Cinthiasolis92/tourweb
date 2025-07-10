@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  background-color: rgb(236 244 242);
+}
+.barra-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 34px;
+  background-color: #0d263b94;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  z-index: 999; /* se mantiene encima de todo */
+}
+.barra-superior .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.barra-superior .ingreso a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+/* inicio overlay menu */
+.overlay {
+  background: rgba(0, 0, 0, 0.45);
+  align-items: flex-start;
+  margin: 69px 12px 6px 9px;
+  border-radius: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  height: 9%;/*agg*/ 
+}
+.overlay .sociales a{
+    color: white;
+    text-decoration: none;
+}
+.sociales img{
+  width: 19px;
+  height: 19px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 17px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.boton-reservar {
+  background-color: #007bff;
+  padding: 5px 9px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+#opcion1{
+  color: rgb(1 51 46);
+  font-weight: bold;
+}
+/* banner de sobre mi */
+.nosotros{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0px 15px 0px 15px; */
+  /* background-color: rgb(210, 214, 213); */
+  padding: 2% 16%;
+}
+.imagenesnosotros{
+  width: 48%;/* Mantienes el ancho del contenedor */
+  height: 310px;
+  overflow: hidden;
+}
+.imagenesnosotros ul{
+  display: flex;
+  width: 200%;/* 100% x 2 imágenes */
+  animation: cambio  20s infinite alternate linear;
+}
+.imagenesnosotros li{
+  width: 100%;/* Cada elemento de la lista ocupa el 100% del contenedor */
+  list-style: none;
+}
+.imagenesnosotros img{
+  width: 100%;
+  height: 314px;
+}
+.titulo{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  color: #b2a3b8;
+  text-transform: uppercase;
+  line-height: 1.2;
+  width: 194px;
+}
+#parrafo p{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3em;
+  font-size: 14px;
+  color: #666;
+  padding: 1% 20%
+}
+/* solo barra final */
+.barrafinal{
+  /* background-color: #7480a0a6; */
+  background-color: #0d263b94;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  color: #e1e2f0;
+  font-size: 12px;
+  line-height: 1.4em;
+  /* font-family: 'Helvetica Neue', Arial, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
+  padding: 24px 10px;
+  position: absolute;
+}
+.barracentral{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 21vh;
+}
+.formulario {
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.inputs input {
+  padding: 6px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: #2b2a2a;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+}
+.mensaje {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mensaje textarea {
+  padding: 6px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  resize: none;
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  color: #2b2a2a;
+}
+button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #3e425b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #2f3245;
+}
+.barraderecha{
+  display: flex;
+  flex-direction: column;
+}
+.barraderecha img{
+  width: 15px;
+  height: 15px;
+}
+
+@keyframes cambio {
+  0% { margin-left: 0%; }
+  20% { margin-left: 0%; }
+
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+}

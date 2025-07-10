@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MundoExplora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="barra-superior">
+        <span>📞 +593997325777</span>
+        <div class="logo">🗼 MundoExplora </div>
+        <div class="ingreso" >
+            <a href="#" id="idioma" class="idioma">
+                <img src="./imagenes/ecua.png" alt="Idioma">
+                <img src="./imagenes/chevron-abajo.png" alt="+">
+            </a>
+            <!-- <ul id="idiomas" class="idiomas">
+                <li class="opcion">
+                <a href="#">
+                    <img src="./imagenes/ecua.png" alt="Icono bandera">
+                    <span>LATINO</span>
+                </a>
+                </li>
+                <li class="opcion">
+                <a href="#">
+                    <img src="./imagenes/usa.png" alt="Icono bandera">
+                    <span>USA</span>
+                </a>
+                </li>
+                <li class="opcion">
+                <a href="#">
+                    <img src="./imagenes/china.png" alt="Icono bandera">
+                    <span>CHINA</span>
+                </a>
+                </li>
+                <li class="opcion">
+                <a href="#">
+                    <img src="./imagenes/italia.png" alt="Icono bandera">
+                    <span>ITALIA</span>
+                </a>
+                </li>
+            </ul> -->
+            <a href="./loginprincipal.html" id="inicio" class="inicio"><img src="./imagenes/usuario8png.png" alt="Inicio"></a>
+        </div>
+    </div>
+    <header class="hero-slider">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('./imagenes/banner1.jpg')"></div>
+            <div class="slide" style="background-image: url('./imagenes/banner2.jpg')"></div>
+            <div class="slide" style="background-image: url('./imagenes/banner3.jpg')"></div>
+        </div>
+        <nav class="overlay">
+            <div class="sociales">
+                <a href="https://facebook.com" target="_blank"><img src="./imagenes/facebook.png" alt="Fa"></a>
+                <a href="https://twitter.com" target="_blank"><img src="./imagenes/twitter.png" alt="X"></a>
+                <a href="https://instagram.com" target="_blank"><img src="./imagenes/instagram.png" alt="Ins"></a>
+            </div>
+            <ul>
+                <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+                <li><a href="#cuadro">DESTINOS</a></li>
+                <li><a href="./tureserva.html">TU RESERVA</a></li>
+                <li><a href="./calendario.html">CALENDARIO</a></li>
+                <li><a href="./terminosycondicionas.html">TÉRMINOS Y CONDICIONES</a></li>
+            </ul>
+        </nav>
+        <div class="text">
+            <h1>VIAJE PARA  <br>EXPLORAR EL MUNDO</h1>
+            <p class="subtitulos">Descubre nuevos lugares, culturas y paisajes inolvidables. Vive la experiencia</p>
+            <a href="./loginprincipal.html" class="boton-reservar">RESERVAR AHORA</a>              
+        </div>
+    </header>
+    <h3>PROXIMOS VIAJES</h3>
+    <!-- Collage -->
+    <div class="cuadro" id="cuadro">
+        <label class="slider-container">
+            <div class="slider-track">
+                <img src="./imagenes/cuenca1.jpg" alt="">
+                <img src="./imagenes/collage1.jpeg" alt="">
+                <img src="./imagenes/collage2.jpeg" alt="">
+            </div>
+            <p class="nombre">Cuenca</p>
+            <p>Por trayecto desde </p>
+            <span class="precio">USD 127</span>
+        </label>
+        <label class="slider-container">
+            <div class="slider-track">
+                <img src="./imagenes/Quito2.jpeg" alt="">
+                <img src="./imagenes/pato.jpeg" alt="">
+                <img src="./imagenes/banner3.jpg" alt="">  
+            </div>
+            <p class="nombre">Quito</p>
+            <p>Por trayecto desde </p>
+            <span class="precio">USD 87</span>
+        </label>
+        <label class="slider-container">
+            <div class="slider-track">
+                <img src="./imagenes/cuenca3.png" alt="">
+                <img src="./imagenes/playa.jpeg" alt="">
+                <img src="./imagenes/collage1.jpeg" alt="">
+            </div>
+            <p class="nombre">Manta</p>
+            <p>Por trayecto desde </p>
+            <span class="precio">USD 27</span>
+        </label>
+    </div>
+    <div class="categoria">
+        <p>Buscar por categoria : </p>
+        <select id="opcioncategoria">
+            <option value="aventura">Aventura</option>
+            <option value="culturales">Culturales</option>
+            <option value="senderismo">Senderismo</option>
+        </select>
+    </div>
+    <div class="contenedor-tarjetas">
+        <div class="tarjeta-boton">
+            <img src="./imagenes/pato.jpeg" alt="Baltra" class="imagen">
+            <div class="contenido">
+                <h3>Baltra, Galápagos</h3>
+                <p>Por trayecto desde :</p>
+                <span class="precio">USD 127</span>
+            </div>
+            <div class="icono">›</div>
+        </div>
+        <div class="tarjeta-boton">
+            <img src="./imagenes/pato.jpeg" alt="San Cristóbal" class="imagen">
+            <div class="contenido">
+                <h3>San Cristóbal, Galápagos</h3>
+                <p>Por trayecto desde</p>
+                <span class="precio">USD 127</span>
+            </div>
+            <div class="icono">›</div>
+        </div>
+        <div class="tarjeta-boton">
+            <img src="./imagenes/pato.jpeg" alt="Cartagena" class="imagen">
+            <div class="contenido">
+                <h3>Cartagena</h3>
+                <p>Por trayecto desde :</p>
+                <span class="precio">USD 156</span>
+            </div>
+            <div class="icono">›</div>
+        </div>
+    </div>
+    <div class="barrafinal">
+        <div class="barraizquierda">
+            <p>Direccion: </p>
+            <p>Av. los rosales 122 calle<br>los olivos y marino</p>
+            <p>info@sitio.com</p>
+        </div>
+        <div class="barracentral">
+            <form action="" method="post" class="formulario">
+                <div class="inputs">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                </div>
+                <div class="mensaje">
+                    <textarea placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form> 
+        </div>
+        <div class="barraderecha">
+            <p>¡Síguenos!</p>
+            <div class="redesimg">
+                <a href="https://facebook.com" target="_blank" ><img src="./imagenes/facebook.png" alt="Fa"></a>
+                <a href="https://twitter.com" target="_blank"><img src="./imagenes/twitter.png" alt="X"></a>
+                <a href="https://instagram.com" target="_blank"><img src="./imagenes/instagram.png" alt="Ins"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Cambio automático de imágenes
+    let slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+    </script>
+</body>
+</html>

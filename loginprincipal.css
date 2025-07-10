@@ -1,0 +1,149 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+    
+}
+body{
+  overflow: hidden;
+  /* background-color: rgb(236 244 242); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 62px;
+  background: linear-gradient(135deg, #a8d8e9, #dfaea0);
+  backdrop-filter: blur(12px); /* desenfoque del fondo */
+}
+input, label, button, select, body{
+  font-family: "Figtree", Arial, sans-serif;
+}
+
+.barra-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 34px;
+  background-color: #0d263b94;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  z-index: 999; /* se mantiene encima de todo */
+}
+.barra-superior .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.barra-superior .ingreso a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+}
+.registro-contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8cd0e8, #dfaea0);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  padding: 20px 0px;
+}
+.registro-formulario{
+  display: flex;
+}
+.registro-formulario, .registro-social {
+  padding: 40px;
+  flex: 1;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #111;
+}
+p a {
+  color: #0744ee;
+  text-decoration: none;
+}
+form {
+  margin-top: 30px;
+}
+label {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 500;
+  color: #333;
+}
+input {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+input:focus {
+  border-color: #2962ff;
+}
+button[type="submit"] {
+  background: white;
+  color: #2962ff;
+  border: 0px solid #2962ff;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 11px;
+}
+button[type="submit"]:hover {
+  background: #2962ff;
+  color: white;
+}
+.registro-social {
+  border-left: 1px solid #ddd;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.o {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #666;
+}
+.google, .facebook {
+  border: 0px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 11px;
+}
+.google {
+  background-color: #fff;
+  color: #333;
+}
+.google img {
+  margin-right: 10px;
+}
+.facebook {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+}
+.facebook img {
+  margin-right: 10px;
+  filter: invert(1);
+}
+

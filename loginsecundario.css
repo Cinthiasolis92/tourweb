@@ -1,0 +1,184 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* overflow: hidden; */
+  background: linear-gradient(135deg, #8cd0e8, #dfaea0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px); 
+  padding: 36p
+}
+input, button, select, body{
+  font-family: "Figtree", Arial, sans-serif;
+}
+.barra-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 34px;
+  background-color: #0d263b94;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  z-index: 999; /* se mantiene encima de todo */
+}
+.barra-superior .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.barra-superior .ingreso a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+}
+.registro-contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  padding: 50px 0px;
+  background: linear-gradient(135deg, #6ca9bf, #dfaea0);
+  border-radius: 15px;
+  margin: 60px;
+}
+.contenedor-central{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.contenedor-central h1 {
+  font-size: 34px;
+  color: #111;
+  margin-bottom: 10px;
+}
+.contenedor-central p {
+  color: #111;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+.contenedor-central a {
+  color: #0744ee;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+.registro-formulario{
+  display: grid;
+  grid-template-columns: 140px 140px;
+  padding: 3px 0px 1px;
+  gap: 0px 103px;
+}
+.registro-formulario label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+input {
+  width: 140%;
+  padding: 6px;
+  margin-bottom: 11px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+  border-radius: 3px;
+  font-size: 12px;
+}
+button[type="submit"] {
+  background: white;
+  color: #2962ff;
+  border: 0px solid #2962ff;
+  border-radius: 7px;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 5px 15px 20px;
+  font-size: 14px;
+}
+button[type="submit"]:hover {
+  background: #2962ff;
+  color: white;
+}
+.registro-social {
+  border-left: 0px solid #ddd;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+label[for="genero"] {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+/* Estilo para el select */
+select#genero {
+  width: 91%;
+  padding: 5px 8px;
+  font-size: 9px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #645f5f;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 16px;
+}
+
+/* Efecto al hacer clic */
+select#genero:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+}
+.o {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #908a8a;
+  display: flex;
+}
+.google, .facebook {
+  border: 0px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 4px 18px;
+}
+.google {
+  background-color: #fff;
+  color: #333;
+}
+.google img {
+  margin-right: 10px;
+}
+.facebook {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+}
+.facebook img {
+  margin-right: 10px;
+  filter: invert(1);
+}
