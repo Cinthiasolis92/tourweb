@@ -1,14 +1,15 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    overflow: hidden;
-    background-color: rgb(236 244 242);
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e1c480, #4c5764);
+
 }
-input, label, button, select, body{
+input, label, button, select{
     font-family: "Figtree", Arial, sans-serif;
 }
 .barra-superior {
@@ -37,13 +38,18 @@ input, label, button, select, body{
 }
 /* inicio overlay menu */
 .overlay {
+  position: relative;
+  z-index: 12;
+  height: 8%;/*agg*/ 
   background: rgba(0, 0, 0, 0.45);
-  align-items: flex-start;
-  margin: 69px 12px 6px 9px;
-  border-radius: 15px;
-  font-family: 'Segoe UI', sans-serif;
-  height: 9%;/*agg*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  margin: 63px 100px 6px 100px;
   border-radius: 7px;
+  width: 74%;
 }
 .overlay .sociales a{
     color: white;
